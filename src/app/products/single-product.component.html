@@ -1,0 +1,78 @@
+<div class=container>
+
+
+<div class="single-2">
+      <div class="single2-heading">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/home']"
+          id="nav-item"
+        >
+          Home <i class="bi bi-chevron-right"></i>
+        </a>
+        <a
+        routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [routerLink]="['/products/watch']"
+          id="nav-item"
+          class="single2-title"
+        >
+          Swatch 
+        </a>
+      </div>
+      <div>
+        <app-single-card *ngFor="let product of products.slice(8,9)" [props]="product"></app-single-card>
+      </div>
+      <hr />
+      <div class="related-content">
+        <h1 class="related-heading">Related Products</h1>
+        <div class="grid-container3">
+          <div class="single1">
+            <app-img-prop src="assets/images/watch_2.png" alt="prodimg" desc="Fossil Series 5" price="N5200"></app-img-prop>
+            <!-- <ImgProp
+              src={watch_2}
+              alt={"prodimg"}
+              desc={"Fossil Series 5"}
+              price={"N5200"}
+            /> -->
+          </div>
+          <div class="single2">
+            <app-img-prop src="assets/images/watch_3.png" alt="prodimg" desc="Fossil Series 5" price="N5200"></app-img-prop>
+            <!-- <ImgProp
+              src={watch_3}
+              alt={"prodimg"}
+              desc={"Fossil Series 5"}
+              price={"N5200"}
+            /> -->
+          </div>
+          <div class="single3">
+            <app-img-prop src="assets/images/watch_4.png" alt="prodimg" desc="Fossil Series 5" price="N5200"></app-img-prop>
+            <!-- <ImgProp
+              src={watch_4}
+              alt={"prodimg"}
+              desc={"Fossil Series 5"}
+              price={"N5200"}
+            /> -->
+          </div>
+          <div class="single4">
+            <app-img-prop src="assets/images/watch_5.png" alt="prodimg" desc="Fossil Series 5" price="N5200"></app-img-prop>
+            <!-- <ImgProp
+              src={watch_5}
+              alt={"prodimg"}
+              desc={"Fossil Series 5"}
+              price={"N5200"}
+            /> -->
+          </div>
+          <div class="single5">
+            <app-img-prop src="assets/images/watch_6.png" alt="prodimg" desc="Fossil Series 5" price="N5200"></app-img-prop>
+            <!-- <ImgProp
+              src={watch_6}
+              alt={"prodimg"}
+              desc={"Fossil Series 5"}
+              price={"N5200"}
+            /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

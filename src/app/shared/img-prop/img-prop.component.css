@@ -1,0 +1,45 @@
+.prod-img{
+    border-radius: 15px;
+    max-width: 100%;
+}
+.imgcontainer {
+    position: relative;
+}
+.prod-name{
+    position: absolute;
+    bottom: 8px;
+  left: 16px;
+    font-weight: 400;
+font-size: 20px; 
+line-height: 30px;
+color: var(--bg-color);
+}
+.prod-price {
+    background-color: var(--tag-color);
+color: var(--bg-color);
+    display: inline-block;
+    padding: 3px 70px;
+    border-radius: 0 15px;
+    position: absolute;
+   top: 0px;
+  right: 55px;
+}
+
+@media only screen and (max-width: 1200px) {
+.prod-price{
+    right: 0px;
+}
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {
+.imgcontainer {
+    max-width: 300px;
+}
+}
+ @media only screen and (max-width: 480px) {
+
+ }
+
+

@@ -1,0 +1,37 @@
+.discount-heading {
+  text-align: center;
+  margin: 70px 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 88px;
+  color: var(--pri-text-color);
+}
+.discount-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--pri-text-color);
+}
+.card-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+@media screen and (max-width: 740px) {
+  .card-container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .discount-heading {
+    font-size: 28px;
+    line-height: normal;
+  }
+  .discount-text {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+}

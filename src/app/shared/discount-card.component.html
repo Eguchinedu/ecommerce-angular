@@ -1,0 +1,13 @@
+<div class="discount-card">
+      <a class='discount-link' [routerLink]="['/products/watch']">
+        <img src={{props.imageSrc}} alt="productimage" />
+      </a>
+      <h2 class="discount-title">{{props.title}}</h2>
+      <p class="discount-price">{{props.price}}</p>
+      <button class="discount-btn" 
+
+        >
+        Add to Cart 
+        <!-- {cartItemAmount > 0 && <>({cartItemAmount})</>} -->
+      </button>
+    </div>

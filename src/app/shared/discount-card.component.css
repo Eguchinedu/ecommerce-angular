@@ -1,0 +1,58 @@
+.discount-card {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+.discount-card img {
+  width: 250px;
+    height: 200px;
+}
+.discount-link {
+    transition: 3s ease-in-out;
+}
+.discount-link:hover::before {
+    content: 'View';
+    width: 250px;
+    height: 200px;
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65));
+    opacity: 0.6;
+    position: absolute;
+}
+.discount-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: var(--pri-text-color);
+}
+.discount-price {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--pri-text-color2);
+}
+.discount-btn {
+  margin-top: auto;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+}
+.discount-btn:hover {
+  background-color: var(--secondary-hover);
+  color: var(--bg-color);
+}

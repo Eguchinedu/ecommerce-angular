@@ -1,0 +1,27 @@
+.card-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+.discount-heading {
+  text-align: center;
+  margin: 70px 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 88px;
+  color: var(--pri-text-color);
+}
+@media screen and (max-width: 740px) {
+  .card-container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .discount-heading {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+}

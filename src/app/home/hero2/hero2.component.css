@@ -1,0 +1,34 @@
+.hero {
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col2 {
+flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col2 img {
+  width: 100%;
+  padding: 50px 0;
+}
+.hero-context {
+    margin-top: 20%;
+}
+.col2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+  color: var(--secondary-color);
+}
+.hero-btn {
+  display: inline-block;
+ border: none;
+border-radius: 10px;
+background-color: var(--secondary-color);
+color: var(--bg-color);
+font-weight: bold;
+padding: 12px 50px;
+text-decoration: none;
+}

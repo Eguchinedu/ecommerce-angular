@@ -1,0 +1,7 @@
+<div class='discount-container'>
+        <h1 class="discount-heading">Discover our weekly discount</h1>
+        <p class='discount-text'>Find a great ideal to suit your selection</p>
+        <div class="card-container">
+         <app-discount-card *ngFor="let product of products" [props]="product"></app-discount-card>
+        </div>
+        </div>

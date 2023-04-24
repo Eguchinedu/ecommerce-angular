@@ -1,0 +1,28 @@
+:host {
+  --primary-color: #212121;
+  --primary-hover: #ff4754;
+  --sec-text-color: #424242;
+  --secondary-color: #4e5ba6;
+  --secondary-hover: #2f45c2;
+  --tag-color: #16B364;
+  --disabled-color: #D6DADE;
+  --bg-color: #ffffff;
+  --pri-text-color: #041549;
+  --pri-text-color2:  #667085;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Body { 
+  max-width: 1295px;
+  margin: 20px auto;
+
+}
+ @media only screen and (max-width: 500px) {
+.Body {
+  padding: 0 20px;
+}
+}

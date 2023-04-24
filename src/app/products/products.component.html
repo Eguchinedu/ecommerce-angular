@@ -1,0 +1,7 @@
+<div class="discount-container">
+      <h1 class="discount-heading">All Products</h1>
+      <div class="card-container">
+        {{errorMessage}}
+        <app-product-card *ngFor="let product of products" [props]="product"></app-product-card>
+      </div>
+    </div>

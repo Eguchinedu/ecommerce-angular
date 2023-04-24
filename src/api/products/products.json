@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Dior Hand Bag",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Bag, Women-fashion, Accessory",
+    "imageSrc": "assets/images/bag.png"
+  },
+  {
+    "id": 2,
+    "title": "Qyeee Glasses",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Accessories, Fashion, Unisex",
+    "imageSrc": "assets/images/glasses.png"
+  },
+  {
+    "id": 3,
+    "title": "Gucci Towel",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Toiletries, Clothing",
+    "imageSrc": "assets/images/towel.png"
+  },
+  {
+    "id": 4,
+    "title": "Quake Sandals",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Women-Fashion, Shoes",
+    "imageSrc": "assets/images/sandals.png"
+  },
+  {
+    "id": 5,
+    "title": "Four Cousins Wine",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Wine, Alcohol, Drinks",
+    "imageSrc": "assets/images/wine.png"
+  },
+
+  {
+    "id": 6,
+    "title": "JBL Headset",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Headset, Music, Gadget",
+    "imageSrc": "assets/images/airpods.png"
+  },
+  {
+    "id": 7,
+    "title": "Nikon Camera",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Photography, Gadget",
+    "imageSrc": "assets/images/camera.png"
+  },
+
+  {
+    "id": 8,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc":"assets/images/watch.png"
+  },
+  {
+    "id": 9,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc": "assets/images/main_watch.png"
+  },
+  {
+    "id": 10,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc": "assets/images/watch 1.png"
+  },
+  {
+    "id": 11,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc": "assets/images/watch_2.png"
+  },
+  {
+    "id": 12,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc": "assets/images/watch_3.png"
+  },
+  {
+    "id": 13,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc": "assets/images/watch_4.png"
+  },
+  {
+    "id": 14,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc": "assets/images/watch_5.png"
+  },
+  {
+    "id": 15,
+    "title": "Swatch Wriswatches",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Swatch, clock, time, gadget",
+    "imageSrc": "assets/images/watch_6.png"
+  },
+
+  {
+    "id": 16,
+    "title": "Mini Drone",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Drone, Gadget",
+    "imageSrc": "assets/images/drone.png"
+  },
+  {
+    "id": 17,
+    "title": "Game Pad",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Gaming, Gadget",
+    "imageSrc": "assets/images/pad.png"
+  },
+  {
+    "id": 18,
+    "title": "Nike Air",
+    "price": "N3000",
+    "description":
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
+    "tags": "Shoes, Fashion, Sports",
+    "imageSrc": "assets/images/shoe.png"
+  }
+]

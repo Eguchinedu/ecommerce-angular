@@ -1,0 +1,109 @@
+<div>
+  <div class="single-container">
+    <div class="thumb-img">
+      <div>
+        <img src="{{ props.imageSrc }}" alt="prodimg" />
+      </div>
+      <div>
+        <img src="{{ props.imageSrc }}" alt="prodimg" />
+      </div>
+      <div>
+        <img src="{{ props.imageSrc }}" alt="prodimg" />
+      </div>
+      <div>
+        <img src="{{ props.imageSrc }}" alt="prodimg" />
+      </div>
+    </div>
+    <div class="main-imgContainer">
+      <img src="{{ props.imageSrc }}" class="main-img" alt="prodimg" />
+    </div>
+    <div class="desc-container">
+      <h1 class="desc-title">{{ props.title }}</h1>
+      <p class="desc-price">{{ props.price }}</p>
+      <div class="desc-review">
+        <div class="desc-rating">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <div class="desc-customer">10 Customer Review</div>
+      </div>
+      <p class="desc-description">{{ props.description }}</p>
+      <div class="desc-button">
+        <div class="desc-btn">
+          <i class="bi bi-dash"></i>
+
+          <p>
+            <!-- {cartItems[props.id]} -->
+            1
+          </p>
+
+          <i class="bi bi-plus"></i>
+        </div>
+        <button class="desc-addbtn">
+          Add To Cart
+          <!-- Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>} -->
+        </button>
+      </div>
+      <hr />
+      <div class="desc-category">
+        <div class="desc-contain">
+          <p class="desc-item1">Category</p>
+          <p class="desc-item2">:</p>
+          <p class="desc-item3">Top Selling</p>
+        </div>
+        <div class="desc-contain">
+          <p class="desc-item1">Tags</p>
+          <p class="desc-item2">:</p>
+          <p class="desc-item3">{{ props.tags }}</p>
+        </div>
+        <div class="desc-contain">
+          <p class="desc-item1">Share</p>
+          <p class="desc-item2">:</p>
+          <p class="desc-item3">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="desc2">
+    <tabset [justified]="true">
+      <tab heading="Description">
+        <div class="desc2-content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+            deleniti odio animi eveniet itaque consequatur asperiores
+            repudiandae amet atque debitis neque hic exercitationem quidem ullam
+            facere, natus nobis ex ipsa voluptate?
+            <br />
+          </p>
+          <p>
+            et, alias expedita quis quasi, nulla autem voluptates iste at
+            voluptatibus adipisci voluptatem impedit aliquid eos eum neque
+            temporibus explicabo quos. Sapiente obcaecati veritatis nostrum ipsa
+            eaque voluptatibus sed corrupti at consectetur? Facilis suscipit
+            quo, odit inventore quasi assumenda. Necessitatibus quia officia
+            quaerat, sapiente dicta fugiat velit! Suscipit consequuntur, dolorum
+            laboriosam necessitatibus adipisci placeat ipsa molestiae, itaque
+            illo maiores et soluta accusamus minima quod beatae assumenda veniam
+            deleniti amet quidem incidunt, ea ad? Qui suscipit,
+          </p>
+        </div>
+        <div class="other-images">
+          <div>
+            <img src="{{ props.imageSrc }}" alt="prodimg" />
+          </div>
+          <div>
+            <img src="{{ props.imageSrc }}" alt="prodimg" />
+          </div></div
+      ></tab>
+      <tab heading="Reviews">Reviews</tab>
+    </tabset>
+  </div>
+</div>
