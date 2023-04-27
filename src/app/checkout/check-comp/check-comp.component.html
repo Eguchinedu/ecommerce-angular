@@ -1,0 +1,253 @@
+<div class="checkout-box">
+      <div class="checkout-box-1">
+        <div class="checkout-header">
+          <div class="checkout-title">
+            <p>1</p>
+            <p>Delivery</p>
+          </div>
+          <div class="checkout-title">
+            <p>2</p>
+            <p>Confirmation</p>
+          </div>
+        </div>
+        <hr />
+        <form #form="ngForm" action="" (ngSubmit)="onSubmit(form)">
+          <div class="check-contact">
+            <h3>Contact Information</h3>
+            <div class="input-row">
+              <div class="inputGroup">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  required
+                  placeholder="Enter your first name"
+                   [(ngModel)]="userDetails.firstName"
+                   #firstNameField="ngModel"
+        [class.field-error]="form.submitted && firstNameField.invalid"
+                />
+                <div
+        [hidden]="!form.submitted || firstNameField.valid"
+        class="alert alert-danger"
+      >
+        Enter your first Name
+      </div>
+              </div>
+              <div class="inputGroup">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  required
+                  placeholder="Enter your last name"
+                  [(ngModel)]="userDetails.lastName"
+                   #lastNameField="ngModel"
+        [class.field-error]="form.submitted && lastNameField.invalid"
+                />
+                <div
+        [hidden]="!form.submitted || firstNameField.valid"
+        class="alert alert-danger"
+      >
+        Enter your last Name
+      </div>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="inputGroup">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Enter your email"
+                  [(ngModel)]="userDetails.email"
+                   #emailField="ngModel"
+        [class.field-error]="form.submitted && emailField.invalid"
+                />
+                <div
+        [hidden]="!form.submitted || emailField.valid"
+        class="alert alert-danger"
+      >
+        Enter your Email Address
+      </div>
+              </div>
+              <div class="inputGroup">
+                <label for="tel">Phone Number</label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required
+                  placeholder="+1 (403) 555 555 000"
+                  [(ngModel)]="userDetails.phoneNo"
+                   #phoneNoField="ngModel"
+        [class.field-error]="form.submitted && phoneNoField.invalid"
+                />
+                <div
+        [hidden]="!form.submitted || phoneNoField.valid"
+        class="alert alert-danger"
+      >
+        Enter your Phone Number
+      </div>
+              </div>
+            </div>
+          </div>
+          <div class="check-deliver">
+            <h3>Delivery Information</h3>
+            <div class="inputGroup">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                required
+                placeholder="Click to find address"
+                [(ngModel)]="userDetails.address"
+                   #addressField="ngModel"
+        [class.field-error]="form.submitted && addressField.invalid"
+              />
+              <div
+        [hidden]="!form.submitted || addressField.valid"
+        class="alert alert-danger"
+      >
+        Enter your Home Address
+      </div>
+            </div>
+            <div class="input-row2">
+              <div class="inputGroup2">
+                <label for="city">City</label>
+                <select id="city" name="city" required [(ngModel)]="userDetails.city"
+                   #cityField="ngModel"
+        [class.field-error]="form.submitted && cityField.invalid && cityField.untouched">
+                  <option value=""></option>
+                  <option value="lagos">Lagos</option>
+                  <option value="abuja">Abuja</option>
+                  <option value="kaduna">Kaduna</option>
+                  <option value="imo">Imo</option>
+                </select>
+                 <div
+        [hidden]="!form.submitted || cityField.valid || cityField.touched"
+        class="alert alert-danger"
+      >
+        Select a City
+      </div>
+              </div>
+              <div class="inputGroup2">
+                <label for="state">State</label>
+                <select id="state" name="state" required [(ngModel)]="userDetails.state"
+                   #stateField="ngModel"
+        [class.field-error]="form.submitted && stateField.invalid && stateField.untouched">
+                  <option value=""></option>
+                  <option value="yaba">Yaba</option>
+                  <option value="Ikeja">Ikeja</option>
+                  <option value="festac">Festac</option>
+                  <option value="cele">Cele</option>
+                </select>
+                <div
+        [hidden]="!form.submitted || stateField.valid || stateField.touched"
+        class="alert alert-danger"
+      >
+        Select a State
+      </div>
+              </div>
+              <div class="inputGroup2">
+                <label for="zip-code">Zip Code</label>
+                <input
+                  type="text"
+                  name="zip-code"
+                  id="zip-code"
+                  required
+                  placeholder="00000"
+                  [(ngModel)]="userDetails.zipCode"
+                   #zipCodeField="ngModel"
+        [class.field-error]="form.submitted && zipCodeField.invalid"
+                />
+                <div
+        [hidden]="!form.submitted || zipCodeField.valid"
+        class="alert alert-danger"
+      >
+        Enter your Zip Code
+      </div>
+              </div>
+            </div>
+          </div>
+<div [hidden]="!postError" class="alert alert-danger">
+      {{ postErrorMessage }}
+    </div>
+          <div class="check-button">
+            <button  class="check-btn">Proceed to Payment</button>
+          </div>
+        </form>
+      </div>
+      <div class="checkout-box-2">
+        <h3>Your Order</h3>
+        <hr />
+        <div class="checkout-total">
+         <div *ngFor="let product of products">
+      <div class="total-item">
+        <div class="total-top">
+          <h1>{{product.title}}</h1>
+          <div class="delete-from-cart">
+            <i
+              (click)="removeItem(product)"
+              class="bi bi-trash3"
+            ></i>
+          </div>
+        </div>
+        <div class="total-middle">
+          <div class="total-img">
+            <img src={{product.imageSrc}} alt="productimage" />
+          </div>
+          <div class="total-desc">
+            <p>-Lorem ispum lorem ipsum lorem ipsum lorem</p>
+          </div>
+          <div class='total-btn'>
+          <p class="total-quantity">Quantity</p>
+          <div class="total-button">
+            <i
+              (click)="decreaseItem(product)"
+              class="bi bi-dash-square"
+            ></i>
+
+            <p>{{product.quantity}}</p>
+
+            <i
+              (click)="addToCart(product)"
+              class="bi bi-plus-square"
+            ></i>
+          </div>
+          </div>
+        </div>
+        <div class="total-bottom">
+          <p class="total-price">{{product.price}}</p>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+        </div>
+        <hr />
+        <div class="checkout-total2">
+          <div class="total-div">
+            <p class="total-sub">Subtotal</p>
+            <p class="total-sub">N3000</p>
+          </div>
+          <div class="total-div">
+            <p class="total-sub">Shipping</p>
+            <p class="total-sub">N3000</p>
+          </div>
+          <div class="total-div">
+            <p class="total-sub">Vat tax</p>
+            <p class="total-sub">N3000</p>
+          </div>
+          <hr />
+          <div class="total-div">
+            <p class="total-price">Total</p>
+            <p class="total-price">N30000</p>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -33,18 +33,21 @@
       <p class="desc-description">{{ props.description }}</p>
       <div class="desc-button">
         <div class="desc-btn">
-          <i class="bi bi-dash"></i>
+          <i (click)="decreaseItem(props)" class="bi bi-dash"></i>
 
-          <p>
-            <!-- {cartItems[props.id]} -->
-            1
+          <p *ngIf="props.quantity >= 2" >
+            {{props.quantity}}
+          </p>
+          <p *ngIf="props.quantity === 1 " >
+            0
           </p>
 
-          <i class="bi bi-plus"></i>
+          <i (click)="addToCart(props)" class="bi bi-plus"></i>
         </div>
-        <button class="desc-addbtn">
+        <button class="desc-addbtn" (click)="addToCart(props)">
           Add To Cart
-          <!-- Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>} -->
+          <span *ngIf="props.quantity >= 2">({{props.quantity}})</span>
+  
         </button>
       </div>
       <hr />

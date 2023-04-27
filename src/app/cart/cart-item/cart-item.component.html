@@ -1,0 +1,29 @@
+<div class="cart-item">
+      <div class="cart-content1">
+      <div class="cart-img">
+        <img src={{props.imageSrc}} alt="productimage" />
+      </div>
+      <div class="cart-desc">
+        <h1>{{props.title}}</h1>
+        <p>-Lorem ispum lorem</p>
+      </div>
+      </div>
+      <div class="cart-content2">
+      <div class="cart-button">
+        <i
+         (click)="decreaseItem(props)"
+          class="bi bi-dash-square"
+        ></i>
+
+        <p>{{props.quantity}}</p>
+
+        <i (click)="addToCart(props)" class="bi bi-plus-square"></i>
+      </div>
+      <p class="cart-price">{{props.price}}</p>
+      <div class="delete-from-cart">
+        <i (click)="removeItem(props)" class="bi bi-trash3"></i>
+      </div>
+      </div>
+    </div>
+
+    <hr class='cart-hr'/>

@@ -1,1 +1,44 @@
-<p>checkout works!</p>
+<div class="container">
+     <div class='checkout-main '>
+        <h1>
+          <a routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/home']">
+            <i class="bi bi-arrow-left"></i>
+          </a>
+          Checkout
+        </h1>
+      </div>
+      <div class="checkout2-heading">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/home']"
+          id="nav-item"
+      
+          
+        >
+          Home <i class="bi bi-chevron-right"></i>
+        </a>
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [routerLink]="['/products/watch']"
+          id="nav-item"
+          class="checkout2-title"
+        >
+          Swatch <i class="bi bi-chevron-right"></i>
+        </a>
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [routerLink]="['/checkout']"
+          id="nav-item"
+          
+          class="checkout2-title"
+        >
+          Checkout
+        </a>
+      </div>
+      <div>
+        <app-check-comp></app-check-comp>
+      </div>
+</div>

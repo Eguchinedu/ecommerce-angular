@@ -15,13 +15,14 @@ import { TopSellingComponent } from './home/top-selling/top-selling.component';
 import { DiscountComponent } from './home/discount/discount.component';
 import { Hero2Component } from './home/hero2/hero2.component';
 import { SharedModule } from './shared/shared.module';
+import { CheckoutModule } from './checkout/checkout.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CheckoutComponent,
     NavbarComponent,
     FooterComponent,
     HeroComponent,
@@ -36,6 +37,7 @@ import { SharedModule } from './shared/shared.module';
     TabsModule.forRoot(),
     ProductsModule,
     CartModule,
+    CheckoutModule,
     AppRoutingModule,
   ],
   providers: [],

@@ -5,9 +5,9 @@
       <h2 class="discount-title">{{props.title}}</h2>
       <p class="discount-price">{{props.price}}</p>
       <button class="discount-btn" 
-
-        >
+      (click)="addToCart(props)"
+      >
         Add to Cart 
-        <!-- {cartItemAmount > 0 && <>({cartItemAmount})</>} -->
+        <span *ngIf="props.quantity >= 2">({{props.quantity}})</span>
       </button>
     </div>

@@ -26,8 +26,8 @@
       </ul>
       <a class="cart nav-link" routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/cart']">
-        <div className="icon">
-              <!-- {sum > 0 && <span className="count">{sum}</span>} -->
+        <div class="icon">
+              <span class="count">{{sum}}</span>
               <i class="bi bi-cart3"></i>
             </div>
       </a>

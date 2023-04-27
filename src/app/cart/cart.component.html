@@ -1,1 +1,69 @@
-<p>cart works!</p>
+<ng-container *ngIf="products.length != 0">
+    <div class=container>
+      <div class="cart-heading">
+          <h1>
+            <a routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/home']">
+              <i class="bi bi-arrow-left"></i>
+            </a>
+            Orders
+          </h1>
+          <p>Your Orders</p>
+        </div>
+        <div class="cartItems">  
+        <app-cart-item *ngFor="let product of products; let i = index" [props]="product"></app-cart-item>
+                    </div>
+                    <div class="checkout">
+                      <a routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/checkout']" class="checkout-btn"> Proceed to Checkout</a>
+                    </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="products.length === 0">
+    <div class="container">
+    <div class="cart-contain">
+        <div class="cart-heading">
+          <h1>
+            <a routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/home']">
+              <i class="bi bi-arrow-left"></i>
+            </a>
+            Orders
+          </h1>
+          <p>Your Orders</p>
+        </div>
+        <!-- {value.every(zeroItem) ? ( -->
+          <div class="noitems">
+            <h1 class="noitems-text">You Have No Items In Your Cart</h1>
+            <a routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/products']" class="noitems-button">
+              Start Shopping <i class="bi bi-cart3"></i>
+          </a>
+          </div>
+        <!-- ) : (
+          <>
+            <div class="cartItems">
+              {ShopData.map((val, ind) => {
+                if (cartItems[val.id] !== 0) {
+                  return (
+                    <CartItem
+                      key={ind}
+                      id={val.id}
+                      imgsrc={val.imgsrc}
+                      title={val.title}
+                      price={val.price}
+                    />
+                  );
+                }
+              })}
+            </div>
+            <div class="checkout">
+              <Link to='/checkout' class="checkout-btn"> Proceed to Checkout</Link>
+            </div>
+          </>
+        )} -->
+      </div>
+</div>
+
+</ng-container>

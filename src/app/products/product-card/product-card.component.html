@@ -7,8 +7,9 @@
       <h2 class="product-title">{{props.title}}</h2>
         <p class='product-price'>{{props.price}}</p>
       <button class="product-btn" 
+      (click)="addToCart(props)"
       >
         Add to Cart 
-        <!-- {cartItemAmount > 0 && <>({cartItemAmount})</>} -->
+        <span *ngIf="props.quantity >= 2">({{props.quantity}})</span>
       </button>
     </div>

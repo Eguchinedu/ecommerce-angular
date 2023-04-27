@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DiscountCardComponent } from './discount-card.component';
 import { RouterModule } from '@angular/router';
 import { ImgPropComponent } from './img-prop/img-prop.component';
@@ -15,7 +15,9 @@ import { ImgPropComponent } from './img-prop/img-prop.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     DiscountCardComponent,
