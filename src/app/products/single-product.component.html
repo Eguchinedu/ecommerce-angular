@@ -21,7 +21,7 @@
         </a>
       </div>
       <div>
-        <app-single-card *ngFor="let product of products.slice(8,9)" [props]="product"></app-single-card>
+        <app-single-card *ngFor="let product of products$| async | slice:8:9" [props]="product" ></app-single-card>
       </div>
       <hr />
       <div class="related-content">

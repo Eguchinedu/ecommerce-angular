@@ -1,4 +1,4 @@
-<ng-container *ngIf="products.length != 0">
+<ng-container *ngIf="(products$ | async)?.length != 0">
     <div class=container>
       <div class="cart-heading">
           <h1>
@@ -11,7 +11,7 @@
           <p>Your Orders</p>
         </div>
         <div class="cartItems">  
-        <app-cart-item *ngFor="let product of products; let i = index" [props]="product"></app-cart-item>
+        <app-cart-item *ngFor="let product of products$ | async" [props]="product"></app-cart-item>
                     </div>
                     <div class="checkout">
                       <a routerLinkActive="active"
@@ -20,7 +20,7 @@
     </div>
 </ng-container>
 
-<ng-container *ngIf="products.length === 0">
+<ng-container *ngIf="(products$ | async)?.length===0">
     <div class="container">
     <div class="cart-contain">
         <div class="cart-heading">

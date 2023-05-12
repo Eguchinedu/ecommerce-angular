@@ -34,22 +34,24 @@
       <div class="desc-button">
         <div class="desc-btn">
           <i (click)="decreaseItem(props)" class="bi bi-dash"></i>
+          <p *ngIf="(count$ | async)?.length === 0">0</p>
 
-          <p *ngIf="props.quantity >= 2" >
-            {{props.quantity}}
-          </p>
-          <p *ngIf="props.quantity === 1 " >
-            0
+          <p *ngIf="(count$ | async)?.length != 0">
+            <span *ngFor="let count of count$ | async">
+              {{ count.count }}
+            </span>
           </p>
 
           <i (click)="addToCart(props)" class="bi bi-plus"></i>
         </div>
         <button class="desc-addbtn" (click)="addToCart(props)">
           Add To Cart
-          <span *ngIf="props.quantity >= 2">({{props.quantity}})</span>
-  
+          <span *ngFor="let count of count$ | async">
+            ({{ count.count }})
+          </span>
         </button>
       </div>
+      <!-- {{ count$ | async| json }} -->
       <hr />
       <div class="desc-category">
         <div class="desc-contain">

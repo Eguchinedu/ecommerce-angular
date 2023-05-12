@@ -6,8 +6,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Bag, Women-fashion, Accessory",
-    "imageSrc": "assets/images/bag.png",
-    "quantity": 1
+    "imageSrc": "assets/images/bag.png"
   },
   {
     "id": 2,
@@ -16,8 +15,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Accessories, Fashion, Unisex",
-    "imageSrc": "assets/images/glasses.png",
-    "quantity": 1
+    "imageSrc": "assets/images/glasses.png"
   },
   {
     "id": 3,
@@ -26,8 +24,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Toiletries, Clothing",
-    "imageSrc": "assets/images/towel.png",
-    "quantity": 1
+    "imageSrc": "assets/images/towel.png"
   },
   {
     "id": 4,
@@ -36,8 +33,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Women-Fashion, Shoes",
-    "imageSrc": "assets/images/sandals.png",
-    "quantity": 1
+    "imageSrc": "assets/images/sandals.png"
   },
   {
     "id": 5,
@@ -46,8 +42,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Wine, Alcohol, Drinks",
-    "imageSrc": "assets/images/wine.png",
-    "quantity": 1
+    "imageSrc": "assets/images/wine.png"
   },
 
   {
@@ -57,8 +52,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Headset, Music, Gadget",
-    "imageSrc": "assets/images/airpods.png",
-    "quantity": 1
+    "imageSrc": "assets/images/airpods.png"
   },
   {
     "id": 7,
@@ -67,8 +61,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Photography, Gadget",
-    "imageSrc": "assets/images/camera.png",
-    "quantity": 1
+    "imageSrc": "assets/images/camera.png"
   },
 
   {
@@ -78,8 +71,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc":"assets/images/watch.png",
-    "quantity": 1
+    "imageSrc":"assets/images/watch.png"
   },
   {
     "id": 9,
@@ -88,8 +80,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc": "assets/images/main_watch.png",
-    "quantity": 1
+    "imageSrc": "assets/images/main_watch.png"
   },
   {
     "id": 10,
@@ -98,8 +89,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc": "assets/images/watch 1.png",
-    "quantity": 1
+    "imageSrc": "assets/images/watch 1.png"
   },
   {
     "id": 11,
@@ -108,8 +98,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc": "assets/images/watch_2.png",
-    "quantity": 1
+    "imageSrc": "assets/images/watch_2.png"
   },
   {
     "id": 12,
@@ -118,8 +107,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc": "assets/images/watch_3.png",
-    "quantity": 1
+    "imageSrc": "assets/images/watch_3.png"
   },
   {
     "id": 13,
@@ -128,8 +116,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc": "assets/images/watch_4.png",
-    "quantity": 1
+    "imageSrc": "assets/images/watch_4.png"
   },
   {
     "id": 14,
@@ -138,8 +125,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc": "assets/images/watch_5.png",
-    "quantity": 1
+    "imageSrc": "assets/images/watch_5.png"
   },
   {
     "id": 15,
@@ -148,8 +134,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Swatch, clock, time, gadget",
-    "imageSrc": "assets/images/watch_6.png",
-    "quantity": 1
+    "imageSrc": "assets/images/watch_6.png"
   },
 
   {
@@ -159,8 +144,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Drone, Gadget",
-    "imageSrc": "assets/images/drone.png",
-    "quantity": 1
+    "imageSrc": "assets/images/drone.png"
   },
   {
     "id": 17,
@@ -169,8 +153,7 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Gaming, Gadget",
-    "imageSrc": "assets/images/pad.png",
-    "quantity": 1
+    "imageSrc": "assets/images/pad.png"
   },
   {
     "id": 18,
@@ -179,7 +162,6 @@
     "description":
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet beatae adipisci nisi neque cumque eum architecto quasi earum totam iusto quos ex, tempora enim odio eos exercitationem nesciunt minus nobis.",
     "tags": "Shoes, Fashion, Sports",
-    "imageSrc": "assets/images/shoe.png",
-    "quantity": 1
+    "imageSrc": "assets/images/shoe.png"
   }
 ]

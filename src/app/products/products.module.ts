@@ -7,6 +7,10 @@ import { SingleProductComponent } from './single-product.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { SingleCardComponent } from './single-card/single-card.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { productReducers } from './store/products-reducer';
+import { ProductEffect } from './store/effects';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
   imports: [
     CommonModule,
     SharedModule,
+    StoreModule.forFeature('products', productReducers),
+    EffectsModule.forFeature([ProductEffect]),
     TabsModule.forRoot(),
     RouterModule.forChild([
       { path: 'products', component: ProductsComponent },

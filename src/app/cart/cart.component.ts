@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from '../services/cart.service';
-import { IProduct } from '../products/products';
+import { IProduct } from '../products/types/products';
+import { Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
+import { ProductGroup, selectGroupedCartItems } from '../products/store/selectors';
 
 @Component({
   selector: 'app-cart',
@@ -8,11 +10,12 @@ import { IProduct } from '../products/products';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-  products: IProduct[] = [];
-  constructor(private cartService: CartService) {}
+  products$: Observable<ProductGroup[]>;
+  constructor(private store : Store) {
+    this.products$ = this.store.select(selectGroupedCartItems)
+  }
 
   ngOnInit(): void {
-    this.cartService.getProducts().subscribe((res) => (this.products = res));
+console.log(this.products$)
   }
-  
 }

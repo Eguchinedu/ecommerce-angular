@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { IProduct } from './products';
-import { ProductService } from '../services/products.service';
+import { IProduct } from './types/products';
+import { Store, select } from '@ngrx/store';
+import * as ProductFetch from 'src/app/products/store/actions';
+import { Observable } from 'rxjs';
+import { errorSelector, isLoadingSelector, productSelector } from './store/selectors';
+import { AppStateInterface } from '../Type/app-state-interface';
 
 @Component({
   selector: 'app-products',
@@ -8,18 +12,17 @@ import { ProductService } from '../services/products.service';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
-public products: IProduct[] = [];
-  errorMessage: string = '';
+  products$: Observable<IProduct[]>;
+  errorMessage$: Observable<string | null>;
+  isLoading$: Observable<boolean>;
 
-  constructor(private productService: ProductService) {}
+  constructor(private store: Store<AppStateInterface>) {
+    this.isLoading$ = this.store.pipe(select(isLoadingSelector));
+
+    this.products$ = this.store.pipe(select(productSelector));
+    this.errorMessage$ = this.store.pipe(select(errorSelector));
+  }
   ngOnInit(): void {
-    this.productService.getProducts().subscribe({
-      next: (products) => {
-        this.products = products;
-        console.log(products)
-      },
-
-      error: (err) => (this.errorMessage = err),
-    });
+    this.store.dispatch(ProductFetch.getProducts());
   }
 }

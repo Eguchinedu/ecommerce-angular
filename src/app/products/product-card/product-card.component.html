@@ -10,6 +10,11 @@
       (click)="addToCart(props)"
       >
         Add to Cart 
-        <span *ngIf="props.quantity >= 2">({{props.quantity}})</span>
+        <!-- <span *ngFor="let count of count$  | async">
+
+            ({{count.count}})
+          </span> -->
       </button>
+      <!-- {{count$|async|json}} -->
+
     </div>

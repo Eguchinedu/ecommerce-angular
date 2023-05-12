@@ -186,10 +186,10 @@
         <h3>Your Order</h3>
         <hr />
         <div class="checkout-total">
-         <div *ngFor="let product of products">
+         <div *ngFor="let product of products$ | async">
       <div class="total-item">
         <div class="total-top">
-          <h1>{{product.title}}</h1>
+          <h1>{{product.product.title}}</h1>
           <div class="delete-from-cart">
             <i
               (click)="removeItem(product)"
@@ -199,7 +199,7 @@
         </div>
         <div class="total-middle">
           <div class="total-img">
-            <img src={{product.imageSrc}} alt="productimage" />
+            <img src={{product.product.imageSrc}} alt="productimage" />
           </div>
           <div class="total-desc">
             <p>-Lorem ispum lorem ipsum lorem ipsum lorem</p>
@@ -212,7 +212,7 @@
               class="bi bi-dash-square"
             ></i>
 
-            <p>{{product.quantity}}</p>
+            <p>{{product.count}}</p>
 
             <i
               (click)="addToCart(product)"
@@ -222,7 +222,7 @@
           </div>
         </div>
         <div class="total-bottom">
-          <p class="total-price">{{product.price}}</p>
+          <p class="total-price">{{product.product.price}}</p>
         </div>
       </div>
 

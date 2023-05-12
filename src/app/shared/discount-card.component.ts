@@ -1,8 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IProduct } from 'src/app/products/products';
-import { CartService } from '../services/cart.service';
+import { IProduct } from 'src/app/products/types/products';
+import * as CartActions from 'src/app/products/store/actions';
+
 import { StateService } from '../services/state.service';
 import Swal from 'sweetalert2';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-discount-card',
@@ -12,17 +14,12 @@ import Swal from 'sweetalert2';
 export class DiscountCardComponent implements OnInit {
   @Input() props!: IProduct;
 
-  constructor(
-    private cartService: CartService,
-    private stateService: StateService
-  ) {}
-  ngOnInit(): void {
-    
-  }
+  constructor(private store: Store) {}
+  ngOnInit(): void {}
   addToCart(item: IProduct) {
-    this.cartService.addToCart(item);
-   
-    console.log('item : ',`added : ${item.title},  Quantity: ${item.quantity}`);
+    this.store.dispatch(CartActions.addToCart(item));
+
+    console.log('item : ', `added : ${item.title}`);
     const Toast = Swal.mixin({
       toast: true,
       position: 'top-end',
@@ -39,6 +36,5 @@ export class DiscountCardComponent implements OnInit {
       icon: 'success',
       title: 'Item Added successfully',
     });
-    
   }
 }

@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IProduct } from 'src/app/products/products';
-import { CartService } from 'src/app/services/cart.service';
 import { UserDetails } from '../user-details';
 import { NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { ProductGroup, selectGroupedCartItems } from 'src/app/products/store/selectors';
+import * as CartActions from 'src/app/products/store/actions';
 
 
 @Component({
@@ -24,33 +26,31 @@ export class CheckCompComponent implements OnInit {
     zipCode: null,
   };
   userDetails: UserDetails = { ...this.originalUserDetails };
-  products: IProduct[] = [];
+  products$: Observable<ProductGroup[]>;
   postError = false;
   postErrorMessage = '';
   src: string;
-  
-  constructor(private cartService: CartService, private router: Router) {
-    
+
+  constructor(private router: Router, private store: Store) {
     this.src = '/assets/images/success.PNG';
+    this.products$ = this.store.select(selectGroupedCartItems);
   }
 
   ngOnInit(): void {
-    this.cartService.getProducts().subscribe((res) => (this.products = res));
     console.log(this.userDetails);
   }
-  decreaseItem(item: IProduct) {
-    this.cartService.decrementQty(item);
-  }
-  removeItem(item: IProduct) {
-    this.cartService.removeCartItem(item);
-  }
-  addToCart(item: IProduct) {
-    this.cartService.addToCart(item);
+  decreaseItem(item: ProductGroup) {
+    this.store.dispatch(CartActions.removeFromCart(item.product));
 
-    console.log(
-      'item : ',
-      `added ${item.title},  Quantity: ${item.quantity} to cart`
-    );
+  }
+  removeItem(item: ProductGroup) {
+    this.store.dispatch(CartActions.removeFromCart(item.product));
+
+  }
+  addToCart(item: ProductGroup) {
+    this.store.dispatch(CartActions.addToCart(item.product));
+
+    console.log('item : ', `added ${item.product.title} to cart`);
   }
   onSubmit(form: NgForm) {
     console.log('in onSubmit: ', form.value);
@@ -75,4 +75,3 @@ export class CheckCompComponent implements OnInit {
     }
   }
 }
-

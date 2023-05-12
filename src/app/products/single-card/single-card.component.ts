@@ -1,8 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IProduct } from '../products';
-import { CartService } from 'src/app/services/cart.service';
-import { StateService } from 'src/app/services/state.service';
+import { IProduct } from '../types/products';
+import * as CartActions from 'src/app/products/store/actions';
 import Swal from 'sweetalert2';
+import { Store } from '@ngrx/store';
+import { ProductGroup, selectGroupedCartItems } from '../store/selectors';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-single-card',
@@ -11,20 +13,21 @@ import Swal from 'sweetalert2';
 })
 export class SingleCardComponent implements OnInit {
   @Input() props!: IProduct;
+  count$: Observable<ProductGroup[]>;
   justified: boolean = true;
   heading: string = '';
 
-  constructor(
-    private cartService: CartService,
-    private stateService: StateService
-  ) {}
+  constructor(private store: Store) {
+    this.count$ = this.store.select(selectGroupedCartItems);
+  }
+
   ngOnInit(): void {}
   decreaseItem(item: IProduct) {
-    this.cartService.decrementQty(item);
+    this.store.dispatch(CartActions.removeFromCart(item));
   }
-  
+
   addToCart(item: IProduct) {
-    this.cartService.addToCart(item);
+    this.store.dispatch(CartActions.addToCart(item));
     const Toast = Swal.mixin({
       toast: true,
       position: 'top-end',
@@ -42,10 +45,6 @@ export class SingleCardComponent implements OnInit {
       title: 'Item Added successfully',
     });
 
-    console.log(
-      'item : ',
-      `added : ${item.title},  Quantity: ${item.quantity}`
-    );
+    console.log('item : ', `added : ${item.title}`);
   }
 }
-

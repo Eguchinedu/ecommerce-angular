@@ -5,5 +5,4 @@ export interface IProduct {
   description: string;
   tags: string;
   imageSrc: string;
-  quantity: number;
 }
